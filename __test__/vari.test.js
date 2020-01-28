@@ -1,6 +1,6 @@
 const Vari = require('../vari')
 
-// Valmis toteutus
+// Valmis toteutus esimerkiksi
 test("orange is the new black", () => {
     let vari = new Vari("oranssi", "#ffa500", [255,165,0])
     expect(vari.nimi).toEqual("oranssi")
