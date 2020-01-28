@@ -1,4 +1,4 @@
-const Vari = require('../vari')
+const Vari = require('./vari')
 
 class Varilista {
 
