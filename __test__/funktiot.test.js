@@ -27,7 +27,10 @@ test("add_four_and_then_multiply_by_three", () => {
 
 
 test("maybe_uppercase_and_decorate_text", () =>{
-    const data = [new TextTestData("aaa", true, true, "-:AAA:-"),new TextTestData("aaa", true, false, "AAA"),new TextTestData("aaa", false, true, "-:aaa:-"),new TextTestData("aaa", false, false, "aaa")]
+    const data = [new TextTestData("aaa", true, true, "-:AAA:-"),
+    new TextTestData("aaa", true, false, "AAA"),
+    new TextTestData("aaa", false, true, "-:aaa:-"),
+    new TextTestData("aaa", false, false, "aaa")]
     for(item of data) {
         const {s, uppercase, decorate, odotettu} = item;
         const tulos = funktiot.maybeUppercaseAndDecorateText(s, uppercase, decorate);

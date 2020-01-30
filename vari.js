@@ -13,6 +13,10 @@ class Vari {
     static hex2rgb(hex="#1a22b6") {
         // Ei tarvita virheentarkistusta, voit olettaa että parametri on 
         // merkkijono muotoa #1a22b6
+        const r = parseInt(hex.substring(1,3), 16)
+        const g = parseInt(hex.substring(3,5), 16)
+        const b = parseInt(hex.substring(5,7), 16)
+        return [r, g, b]
     }
     static rgb2hex(rgb) {
         if (typeof rgb !== typeof []) {
@@ -23,7 +27,7 @@ class Vari {
         if (g < 0 || g > 255) throw new Error('Invalid red value')
         if (b < 0 || b > 255) throw new Error('Invalid red value')
         r = r ? r.toString(16) : '00';
-        g = g ? b.toString(16) : '00';
+        g = g ? g.toString(16) : '00';
         b = b ? b.toString(16) : '00';
         return `#${r}${g}${b}`
     }

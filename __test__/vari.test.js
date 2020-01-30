@@ -10,7 +10,11 @@ test("orange is the new black", () => {
 
 // Tästä testit mukaan
 test("Värin rgb arvo lasketaan oikein construktoria käytettäessä", () => {
-    // let vari = new Vari("oranssi", "#ffa500")
-    // expect(vari.nimi).toEqual("oranssi")
-    // expect(vari.rgb).toEqual([255,165,0])
+    let vari = new Vari("oranssi", "#ffa500")
+    expect(vari.nimi).toEqual("oranssi")
+    expect(vari.rgb).toEqual([255,165,0])
 })
+
+// test("rgb arvo", () => {
+//     expect(Vari.rgb2hex([1,22,3])).toEqual("#010203")
+// })

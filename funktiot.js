@@ -4,15 +4,23 @@ function addThree(n)
 }
 
 function addFourAndThenMultiplyByThree(n) {
-    throw new NotImplementedException();
+    return (n+4) * 3
 }
 
 function maybeUppercaseAndDecorateText(s, uppercase, decorate) {
-    throw new NotImplementedException();
+    if (uppercase) s = s.toUpperCase()
+    if (decorate) s = `-:${s}:-`
+    return s;
 }
 
 function tellRelationToHundred(number) {
-    throw new NotImplementedException();
+    if (number < 0) {
+        return `${number} is a negative number`
+    }
+    if (number > 100) {
+        return `${number} is greater than 100`
+    }
+    return `Add ${100 - number} to ${number} and you get 100`
 }
 
 // Apuluokka toteuttamattomien funkioiden huomaamiseksi
